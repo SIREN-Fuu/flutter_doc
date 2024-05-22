@@ -78,16 +78,27 @@
       "text": "$(debug-console)",
       "tooltip": "flutter run this file"
     },
+    // {
+    //   "arguments": [
+    //     "flutter: build_Web"
+    //   ],
+    //   "command": "workbench.action.tasks.runTask",
+    //   "id": "build_web",
+    //   "name": "build web",
+    //   "priority": -1,
+    //   "text": "$(notebook-render-output)",
+    //   "tooltip": "build web"
+    // },
     {
       "arguments": [
-        "flutter: build_Web"
+        "flutter: dart doc"
       ],
       "command": "workbench.action.tasks.runTask",
-      "id": "build_web",
-      "name": "build web",
+      "id": "dart_doc",
+      "name": "dart doc",
       "priority": -1,
       "text": "$(notebook-render-output)",
-      "tooltip": "build web"
+      "tooltip": "dart doc"
     },
     {
       "arguments": [
