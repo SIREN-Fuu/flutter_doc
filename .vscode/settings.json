@@ -1,0 +1,212 @@
+{
+    "[dart]": {
+        "editor.bracketPairColorization.enabled": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.guides.bracketPairs": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "cSpell.autoFormatConfigFile": true,
+    "cSpell.ignorePaths": [
+        "node_modules",
+        "**/node_modules",
+        "**/node_modules/**",
+        "node_modules/**",
+        "vscode-extension",
+        ".git",
+        "**/pub.dev/**",
+        "**/flutter/**",
+        "**/*.json",
+        "**/*.g.dart"
+    ],
+    "commentTranslate.hover.enabled": true,
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "dart.flutterSdkPath": ".fvm/versions/3.22.0",
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.inlineValues": "on",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.showBreakpointsInOverviewRuler": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": "active",
+    "files.watcherExclude": {
+        "**/*.g.dart": true,
+        "**/.fvm": true,
+        "**/doc/**": true
+    },
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "liveServer.settings.port": 15501,
+    "liveServer.settings.root": "./doc/api",
+    "search.exclude": {
+        "**/*.g.dart": true,
+        "**/.fvm": true,
+        "**/doc/**": true
+    },
+    "statusbar_command.commands": [
+        {
+            "command": "saveAll",
+            "id": "all_save",
+            "name": "all_save",
+            "priority": -1,
+            "text": "$(save-all)",
+            "tooltip": "全て保存"
+        },
+        {
+            "arguments": [
+                "flutter: run this file"
+            ],
+            "command": "workbench.action.tasks.runTask",
+            "id": "flutter run this file",
+            "name": "flutter run this file",
+            "priority": -1,
+            "text": "$(debug-console)",
+            "tooltip": "flutter run this file"
+        },
+        {
+            "arguments": [
+                "flutter: build_Web"
+            ],
+            "command": "workbench.action.tasks.runTask",
+            "id": "build_web",
+            "name": "build web",
+            "priority": -1,
+            "text": "$(notebook-render-output)",
+            "tooltip": "build web"
+        },
+        {
+            "arguments": [
+                "FVM Use"
+            ],
+            "command": "workbench.action.tasks.runTask",
+            "id": "fvm_use",
+            "name": "fvm use",
+            "priority": -1,
+            "text": "$(server-process)",
+            "tooltip": "fvm use"
+        },
+        {
+            "arguments": [
+                "flutter: dart_fix"
+            ],
+            "command": "workbench.action.tasks.runTask",
+            "id": "dart_fix",
+            "name": "dart fix",
+            "priority": -1,
+            "text": "$(wrench)",
+            "tooltip": "dart fix --apply"
+        },
+        {
+            "arguments": [
+                "flutter: build_runner_watch"
+            ],
+            "command": "workbench.action.tasks.runTask",
+            "id": "build_task",
+            "name": "build task",
+            "priority": -1,
+            "text": "$(tools)",
+            "tooltip": "build runner watch"
+        },
+        {
+            "alignment": "left",
+            "command": "workbench.action.debug.start",
+            "id": "debug",
+            "name": "Debug",
+            "priority": -1,
+            "text": "$(debug-alt)",
+            "tooltip": "Debug"
+        }
+    ],
+    "todo-tree.general.tagGroups": {
+        "BUG": [
+            "BUG"
+        ],
+        "FIXME": [
+            "FIXME"
+        ],
+        "HACK": [
+            "HACK"
+        ],
+        "MEMO": [
+            "MEMO"
+        ],
+        "NOTE": [
+            "NOTE"
+        ],
+        "TODO": [
+            "TODO"
+        ],
+        "UNDONE": [
+            "UNDONE"
+        ],
+        "WARNING": [
+            "WARNING"
+        ]
+    },
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "HACK",
+        "UNDONE",
+        "BUG",
+        "XXX",
+        "WARNING",
+        "REVIEW",
+        "OPTIMIZE",
+        "CHANGED",
+        "MEMO",
+        "NOTE",
+        "TEST",
+        "Nakajima",
+        "*"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "BUG": {
+            "foreground": "#ff00ff"
+        },
+        "FIXME": {
+            "foreground": "#ff0000"
+        },
+        "HACK": {
+            "foreground": "#fffb00"
+        },
+        "NOTE": {
+            "foreground": "#ffffff"
+        },
+        "TODO": {
+            "foreground": "#FF8C00"
+        },
+        "UNDONE": {
+            "foreground": "#00eeff"
+        },
+        "WARNING": {
+            "foreground": "#FF0000",
+            "icon": "alert"
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "background": "#5a3e3e",
+        "foreground": "#00ff00",
+        "icon": "checklist",
+        "iconColour": "#2C7CFF",
+        "opacity": 50,
+        "type": "text"
+    },
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)(\\(|:|\\s)[^(*|@|\\n)].*(\\\\n\\\\s(//|/\\\\*|\\\\*\\\\*|\\\\*)\\s{1,}.*)*",
+    "todo-tree.ripgrep.ripgrepMaxBuffer": 400
+}

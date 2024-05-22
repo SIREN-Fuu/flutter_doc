@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "dart-code.flutter",
+        "dart-code.dart-code",
+        "mhutchie.git-graph",
+        "gruntfuggly.todo-tree",
+        "streetsidesoftware.code-spell-checker",
+        "pkief.material-icon-theme",
+        "usernamehw.errorlens",
+        "anweber.statusbar-commands",
+        "sandcastle.vscode-open",
+        "ritwickdey.liveserver"
+    ]
+}

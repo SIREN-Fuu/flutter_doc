@@ -1,0 +1,6 @@
+dartdoc:
+  categories:
+    "Pages":
+      markdown: doc/api_md/pages.md
+  categoryOrder: ["Pages"]
+  showUndocumentedCategories: true
