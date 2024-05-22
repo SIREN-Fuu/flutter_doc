@@ -1,0 +1,156 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FVM Use",
+      "detail": "FVMを利用してFlutterバージョンをプロジェクトに合わせます",
+      "type": "shell",
+      "command": "fvm use",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "runOptions": {
+        // "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "flutter: build_runner_one_time",
+      "detail": "ビルドランナーを一度だけ実行します",
+      "type": "shell",
+      "command": "dart run build_runner build --delete-conflicting-outputs",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "flutter: build_runner_watch",
+      "detail": "ビルドランナーをWatchモードで起動します",
+      "type": "shell",
+      "command": "dart run build_runner watch --delete-conflicting-outputs",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "flutter: build_Web",
+      "detail": "Webビルドを実行します",
+      "type": "shell",
+      "command": "flutter build web --dart-define-from-file=scripts/flavors/stg.json --no-tree-shake-icons",
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "flutter: dart_fix",
+      "detail": "dart fixを実行します",
+      "type": "shell",
+      "command": "dart fix --apply",
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "flutter: Launch Web-Server",
+      "detail": "Web Debug resolve CORS",
+      "type": "shell",
+      "command": "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=16502 --dart-define-from-file=scripts/flavors/stg.json",
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "flutter: run this file",
+      "detail": "flutter: run this file",
+      "type": "shell",
+      "command": "flutter",
+      "args": [
+        "run",
+        "-t",
+        "${relativeFile}",
+        "--dart-define-from-file=scripts/flavors/dev.json",
+        "--observatory-port",
+        "49000",
+        "--disable-service-auth-codes"
+      ],
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "flutter: dart doc internal",
+      "detail": "dart docを実行します",
+      "type": "shell",
+      "command": "dart",
+      "args": [
+        "doc"
+      ],
+      "problemMatcher": [],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "close": false
+      },
+      "isBackground": false,
+      "hide": true
+    },
+    {
+      "label": "flutter: dart doc",
+      "detail": "dart docを実行しCSSをカスタマイズします",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/doc/api_customize/update_style_css.ps1"
+      ],
+      "problemMatcher": [],
+      "dependsOn": [
+        "flutter: dart doc internal",
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "close": false
+      },
+      "isBackground": false,
+    },
+    // {
+    //   "label": "WindowsSubsystemForAndroid ADB",
+    //   "detail": "adb connect Windows11 Subsystem Android",
+    //   "type": "shell",
+    //   "command": "adb connect 127.0.0.1:58526",
+    //   "group": "none",
+    //   "problemMatcher": []
+    // },
+    // {
+    //   "label": "chrome_driver",
+    //   "detail": "boot chromedriver",
+    //   "type": "shell",
+    //   "command": "${workspaceFolder}\\integration_test\\chromedriver --port=4444",
+    //   "group": "none",
+    //   "problemMatcher": []
+    // },
+    // {
+    //   "label": "integration_test",
+    //   "detail": "Integration Test for Web",
+    //   "type": "shell",
+    //   "command": "flutter drive --driver=test_driver\\integration_test.dart --target=integration_test\\app_test.dart -d chrome",
+    //   "group": "none",
+    //   "problemMatcher": []
+    // },
+    // {
+    //   "label": "integration_test_headless",
+    //   "detail": "Integration Test for Web Headless",
+    //   "type": "shell",
+    //   "command": "flutter drive --driver=test_driver\\integration_test.dart --target=integration_test\\app_test.dart -d web-server",
+    //   "group": "none",
+    //   "problemMatcher": []
+    // }
+  ]
+}

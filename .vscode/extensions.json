@@ -9,6 +9,7 @@
         "usernamehw.errorlens",
         "anweber.statusbar-commands",
         "sandcastle.vscode-open",
-        "ritwickdey.liveserver"
+        "ritwickdey.liveserver",
+        "ms-vscode.powershell"
     ]
 }
