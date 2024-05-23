@@ -51,7 +51,7 @@
     "**/doc/**": true
   },
   "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-  "liveServer.settings.port": 15501,
+  "liveServer.settings.port": 15500,
   "liveServer.settings.root": "./doc/api",
   "search.exclude": {
     "**/*.g.dart": true,

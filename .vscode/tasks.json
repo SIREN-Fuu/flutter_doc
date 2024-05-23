@@ -97,6 +97,56 @@
       "hide": true
     },
     {
+      "label": "flutter: dart doc internal sort main",
+      "detail": "MainページのLibrariesをソートします",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/doc/api_customize/update_library_sort_main_page.ps1"
+      ],
+      "problemMatcher": [],
+      "dependsOn": [
+        "flutter: dart doc internal",
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "close": false
+      },
+      "isBackground": false,
+      "hide": true
+    },
+    {
+      "label": "flutter: dart doc internal sort sidebar",
+      "detail": "SidebarのLibrariesをソートします",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/doc/api_customize/update_library_sort_sidebar.ps1"
+      ],
+      "problemMatcher": [],
+      "dependsOn": [
+        "flutter: dart doc internal sort main",
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "close": false
+      },
+      "isBackground": false,
+      "hide": true
+    },
+    {
       "label": "flutter: dart doc",
       "detail": "dart docを実行しCSSをカスタマイズします",
       "type": "shell",
@@ -110,7 +160,7 @@
       ],
       "problemMatcher": [],
       "dependsOn": [
-        "flutter: dart doc internal",
+        "flutter: dart doc internal sort sidebar",
       ],
       "group": "none",
       "presentation": {
